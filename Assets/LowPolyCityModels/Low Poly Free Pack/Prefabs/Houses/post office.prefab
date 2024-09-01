@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9028720775663911357}
   - component: {fileID: -1374262570926971329}
   - component: {fileID: -7580843206415671639}
+  - component: {fileID: -5951761871314378297}
   m_Layer: 0
   m_Name: post office
   m_TagString: Untagged
@@ -115,3 +116,24 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!65 &-5951761871314378297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7371418172102844520}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.535742, y: 8.625278, z: 8.192301}
+  m_Center: {x: 0.00000023841858, y: 4.312639, z: 0}
