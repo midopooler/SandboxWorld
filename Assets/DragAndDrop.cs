@@ -20,6 +20,8 @@ public class DragAndDrop : MonoBehaviour
         mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         mOffset = gameObject.transform.position - GetMouseWorldPos();
         initialY = gameObject.transform.position.y; // Store the initial Y position
+        gameObject.GetComponent<Outline>().enabled = true;
+        gameObject.GetComponent<Outline>().OutlineColor = Color.cyan;
     }
 
     private Vector3 GetMouseWorldPos()
@@ -34,10 +36,12 @@ public class DragAndDrop : MonoBehaviour
         Vector3 newPosition = GetMouseWorldPos() + mOffset;
         newPosition.y = 2.1f; // Keep the Y position constant
         transform.position = newPosition;
+        gameObject.GetComponent<Outline>().OutlineColor = Color.magenta;
     }
 
     void OnMouseUp()
     {
+        gameObject.GetComponent<Outline>().enabled = false;
         //rb.isKinematic = false; // Re-enable physics once the object is dropped
     }
 }

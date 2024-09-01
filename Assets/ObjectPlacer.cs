@@ -20,7 +20,7 @@ public class ObjectPlacer : MonoBehaviour/*, IPointerDownHandler, IPointerUpHand
         //new Vector3(19.75f, YPosition, -4.3f),
         //new Vector3(16.9f, YPosition, -29.9f),
         //new Vector3(19.2f, YPosition, -23.1f)
-        new Vector3(0f, 2.1f, -60f)
+        new Vector3(0f, 2.1f, -68f)
     };
 
     private int currentSpawnIndex = 0;
